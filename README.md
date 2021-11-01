@@ -3,6 +3,8 @@ Source code is organized as follows
 - lib/input_reader is responsible for reading input files
 - lib/input_cleaner enforce rules for cleaning 
 - lib/word_sequence_counter is responsible for counting words
+- WordSequenceCounterApp defined at https://github.com/sudeepdalal-enjoy/word_sequence_counter/blob/master/bin/word_sequence_counter
+  compose functionality from above components
 
 
 
