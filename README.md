@@ -9,7 +9,7 @@ Source code is organized as follows
 
 
 - installation
-- Tested with ruby 3.00
+- Tested with ruby 3.00 and Bundler version 2.2.15
 
 ```
 >> cd word_sequence_count
