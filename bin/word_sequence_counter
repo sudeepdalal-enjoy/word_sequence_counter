@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require_relative '../lib/word_sequence_counter.rb'
+module WordSequenceCounter
+class WordSequenceCounterApp
+  def initialize(args)
+    @input_reader = ::WordSequenceCounter::InputReader.new(args)
+    @input_cleaner = ::WordSequenceCounter::InputCleaner.new(@input_reader.content)
+    @word_sequence_counter = ::WordSequenceCounter::WordSequenceCounter.new(@input_cleaner.clean_content)
+  end
+
+  def run
+    @word_sequence_counter.count_word_sequence.sort_by { |_, count| count }.reverse.take(100)
+  end
+end
+end
+
+puts WordSequenceCounter::WordSequenceCounterApp.new(ARGV).run
