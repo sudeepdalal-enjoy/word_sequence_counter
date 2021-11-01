@@ -9,7 +9,7 @@ Source code is organized as follows
 
 
 - installation
-# need ruby 3.00
+- Tested with ruby 3.00
 
 ```
 >> cd word_sequence_count
