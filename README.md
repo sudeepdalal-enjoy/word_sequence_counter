@@ -8,7 +8,8 @@ Source code is organized as follows
 
 
 
-- installation 
+- installation
+# need ruby 3.00
 
 ```
 >> cd word_sequence_count
